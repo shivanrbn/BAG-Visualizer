@@ -1,0 +1,31 @@
+# TODO, replace with poetry. 
+# necessary for polygon extraction and reading into matrices
+numpy ~= 1.21
+pillow ~= 9.1s
+rasterio ~= 1.2
+shapely ~=1.8
+owslib ~=0.25
+requests ~= 2.27
+
+# command cli
+click ~= 7.1.2
+
+# database drivers and connectors
+psycopg2-binary ~=2.9.0
+sqlalchemy ~=1.4.0
+dictalchemy3 ~=1.0.0
+geoalchemy2 ~= 0.10
+greenlet ~=1.0.0 # Needed because of an issue in SQLAlchemy 1.4.x: https://github.com/sqlalchemy/sqlalchemy/issues/6136
+
+
+#cityjson library,need to clone off my own modified fork to enable texture generation in the json..
+git+https://github.com/ShivanRambaran/cjio.git@develop#egg=cjio
+
+#loading env variabled
+python-dotenv ~= 0.19
+
+#nice linting
+flake8
+mypy
+pyflakes
+
